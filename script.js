@@ -8,6 +8,11 @@ let state = {};
 function startGame() {
     state = {};
     showStoryNode(1);
+    // Ocultar el menú al comenzar el juego
+    const menu = document.getElementById('menu');
+    if (menu) {
+        menu.style.display = 'none';
+    }
 }
 
 const storyNodes = {
@@ -83,4 +88,6 @@ function showStoryNode(nodeIndex) {
     }
 }
 
+// Inicializar el juego al cargar la página
+// No se muestra el menú inicial
 startGame();
