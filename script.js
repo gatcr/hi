@@ -27,7 +27,7 @@ const storyNodes = {
         text: "Caminas hacia la luz y encuentras una casa. Hay dos puertas, una roja y una azul.",
         choices: [
             { text: 'Abrir la puerta roja', nextNode: 4 },
-            { text: 'Abrir la puerta azul', nextNode: 5 }
+            { text: 'Abrir la puerta azul', nextNode: 8 }
         ]
     },
     3: {
@@ -60,8 +60,21 @@ const storyNodes = {
         choices: [
             { text: 'Volver a empezar', nextNode: 1 }
         ]
-    }
-};
+    },
+    8: {
+        text: "habia una mujer bonita que haces.",
+        choices: [
+            { text: 'estar con ella', nextnode: 9 },
+            { text: 'huir', nextnode: 6}
+        ]
+    },
+    9: {
+        text: "era un moustro te comio.",
+        choices: [
+            { text: 'perdiste', nextnode 1}
+    
+                
+    };
 
 function showStoryNode(nodeIndex) {
     const node = storyNodes[nodeIndex];
